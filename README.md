@@ -47,3 +47,30 @@
 > ---
 >
 > Babel is an inbuild transpiler that converts the ECMA Script 6 code to an ECMA Script 5 code because the browser cannot read JSX which is not a regular JavaScript object. So Babel helps to convert the JSX file to a regular JavaScript object and then pass it to the browser.
+
+>## Difference between class-component & functional-component
+>
+> ---
+> 
+> CLASS COMPONENT:
+> 1. Class component can be used when you are doing data operations and server calls.
+> 2. It contains lifecycle methods.
+> 3. Constructor structure is required since these are class components.
+> 4. And it contains state variables.
+
+> FUNCTIONAL COMPONENT:
+> 1. Functional components can be used mostly when we need to create dumb or stateless components.
+> 2. Thses components doen not have lifecycle methods, they have hooks like useEffect.
+> 3. Complete constructor structure is not required in these components, so they are easy to handle.
+> 4. Do not have state variables, they have hooks like useState, useParams, etc.
+
+
+>## Difference between named-export and default export
+>
+> ---
+>
+> Export without a default tag are named-exports, it use the name of the function or class as their identifier. When we want to import a named component, we can use the same name it was exported with. Names must be imported inside curly brackets. Named exports allow multiple exports in a single file.
+>
+> Whereas, Default exports are created by including a default tag in the export. Usually, we see default exports happen at the bottom of a file, but it's possible to define them when your component is declared. When importing a default export, we don't use curly brackets. When we import a default export, we can give it whatever name we want. A modules can only have one default export.
+
+
